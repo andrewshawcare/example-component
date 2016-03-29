@@ -19,7 +19,8 @@
     "ace-builds": "^1.2.2",
     "jasmine-core": "^2.4.1",
     "serve-static": "^1.10.2",
-    "finalhandler": "^0.4.1"
+    "finalhandler": "^0.4.1",
+    "get-json": "andrewshawcare/get-json#18cf1b4"
   },
   "devDependencies": {
     "jasmine": "^2.4.1",

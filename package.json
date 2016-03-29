@@ -1,0 +1,28 @@
+{
+  "name": "example-component",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine"
+  },
+  "description": "Renders an interactive view of a web component with a data editor and test reporter.",
+  "keywords": ["example", "component", "html", "view"],
+  "homepage": "https://github.com/andrewshawcare/example-component",
+  "bugs": {
+    "url": "https://github.com/andrewshawcare/example-component/issues",
+    "email": "andrewshawcare@gmail.com"
+  },
+  "license": "MIT",
+  "author": "Andrew Shaw Care <andrewshawcare@gmail.com> (https://github.com/andrewshawcare)",
+  "repository": "andrewshawcare/example-component",
+  "dependencies": {
+    "ace-builds": "^1.2.2",
+    "jasmine-core": "^2.4.1",
+    "serve-static": "^1.10.2",
+    "finalhandler": "^0.4.1"
+  },
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "jsdom": "^8.2.0"
+  }
+}

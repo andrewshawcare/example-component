@@ -1,0 +1,8 @@
+version: "2"
+services:
+  example-component:
+    build: .
+    ports:
+      - '80'
+    volumes:
+      - ./:/usr/src/app

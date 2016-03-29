@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="./node_modules/jasmine-core/lib/jasmine-core/jasmine.css"/>
+    <link rel="stylesheet" href="./stylesheet.css"/>
+  </head>
+  <body>
+    <script src="./node_modules/jasmine-core/lib/jasmine-core/jasmine.js"></script>
+    <script src="./node_modules/jasmine-core/lib/jasmine-core/jasmine-html.js"></script>
+    <script src="./node_modules/jasmine-core/lib/jasmine-core/boot.js"></script>
+    <script src="./node_modules/ace-builds/src-noconflict/ace.js"></script>
+    <script src="./index.js"></script>
+    <script src="./spec/test.js"></script>
+    <script>
+      var getJson = function (url, callback) {
+        var request = new XMLHttpRequest();
+        request.open("GET", url);
+        request.onload = function () {
+          callback(JSON.parse(request.responseText));
+        };
+        request.send();
+      };
+
+      getJson("/package.json", function (package) {
+        document.body.appendChild(ExampleComponent({
+          package: package,
+          data: {"value": "Hello, world!"},
+          component: function (data) {
+            var element = document.createElement("div")
+            element.innerText = data.value;
+            return element;
+          }
+        }));
+      });
+    </script>
+  </body>
+</html>

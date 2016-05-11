@@ -25,6 +25,7 @@ ExampleComponent = function(args) {
   exampleElement.appendChild(dataElement);
 
   var editor = ace.edit(dataElement);
+  editor.$blockScrolling = Infinity;
   editor.setTheme("ace/theme/github")
 
   var session = editor.getSession();

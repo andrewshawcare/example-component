@@ -1,7 +1,14 @@
 ExampleComponent = function(args) {
-  var package = args.package;
-  var data = args.data;
-  var component = args.component;
+  var args = args || {};
+  var name = args.name || "NoNameProvided";
+  var version = args.version || "no.version.provided";
+  var description = args.description || "No description provided.";
+  var data = args.data || {"error": "No data provided."};
+  var component = args.component || function () {
+    var element = document.createElement("div");
+    element.innerText = "No component provided.";
+    return element;
+  };
 
   var exampleElement = document.createElement("article");
   exampleElement.classList.add("example");
@@ -12,12 +19,12 @@ ExampleComponent = function(args) {
 
   var nameElement = document.createElement("h1");
   nameElement.classList.add("name");
-  nameElement.innerText = package.name;
+  nameElement.innerText = name;
   headerElement.appendChild(nameElement);
 
   var descriptionElement = document.createElement("p");
   descriptionElement.classList.add("description");
-  descriptionElement.innerText = package.description;
+  descriptionElement.innerText = description;
   headerElement.appendChild(descriptionElement);
 
   var dataElement = document.createElement("section");

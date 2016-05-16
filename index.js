@@ -1,4 +1,4 @@
-define(["./node_modules/ace-builds/src-min/ace"], function (ace) {
+define(["node_modules/ace-builds/src-min/ace"], function () {
   return function(args) {
     var args = args || {};
     var name = args.name || "NoNameProvided";

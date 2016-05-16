@@ -1,6 +1,6 @@
 {
   "name": "example-component",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/jasmine"
@@ -20,7 +20,8 @@
     "jasmine-core": "^2.4.1",
     "serve-static": "^1.10.2",
     "finalhandler": "^0.4.1",
-    "get-json": "andrewshawcare/get-json#18cf1b4"
+    "get-json": "andrewshawcare/get-json#18cf1b4",
+    "requirejs": "^2.2.0"
   },
   "devDependencies": {
     "jasmine": "^2.4.1",

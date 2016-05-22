@@ -22,6 +22,10 @@
   },
   "devDependencies": {
     "jasmine": "^2.4.1",
-    "jsdom": "^8.2.0"
+    "jsdom": "^8.2.0",
+    "amdefine": "^1.0.0"
+  },
+  "component": {
+    "data": {}
   }
 }

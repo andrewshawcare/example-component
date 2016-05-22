@@ -1,11 +1,11 @@
-define(["node_modules/ace-builds/src-min/ace"], function () {
-  return function(args) {
-    var args = args || {};
-    var name = args.name || "NoNameProvided";
-    var version = args.version || "no.version.provided";
-    var description = args.description || "No description provided.";
-    var data = args.data || {"error": "No data provided."};
-    var component = args.component || function () {
+define(["./node_modules/ace-builds/src/ace"], function (ace) {
+  return function(data) {
+    var data = data || {};
+    var name = data.name || "NoNameProvided";
+    var version = data.version || "no.version.provided";
+    var description = data.description || "No description provided.";
+    var data = data.data || {"error": "No data provided."};
+    var component = data.component || function () {
       var element = document.createElement("div");
       element.innerText = "No component provided.";
       return element;

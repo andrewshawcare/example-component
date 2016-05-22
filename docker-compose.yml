@@ -1,8 +1,11 @@
 version: "2"
 services:
   example-component:
-    build: .
+    image: andrewshawcare/component-workshop
+    environment:
+      - COMPONENT_PATH=./example-component
     ports:
-      - '80'
+      - '80:80'
+      - '35729:35729'
     volumes:
-      - ./:/usr/src/app
+      - ./:/usr/src/app/example-component

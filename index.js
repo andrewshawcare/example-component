@@ -37,7 +37,7 @@ define(["ace/ace"], function (ace) {
     editor.setTheme("ace/theme/github")
 
     var session = editor.getSession();
-    session.setValue(JSON.stringify(data));
+    session.setValue(JSON.stringify(data, null, 2));
     session.setMode("ace/mode/json");
     session.on("change", function (event) {
       try {

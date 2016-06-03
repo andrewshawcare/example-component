@@ -1,6 +1,6 @@
 {
   "name": "example-component",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "main": "index.js",
   "scripts": {
     "test": "JASMINE_CONFIG_PATH=jasmine.json ./node_modules/.bin/jasmine"

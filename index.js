@@ -1,4 +1,4 @@
-define(["ace/ace", "./node_modules/primitive-component/index"], function (ace, PrimitiveComponent) {
+define(["ace/ace", "node_modules/primitive-component/index"], function (ace, PrimitiveComponent) {
   return function(args) {
     var args = args || {};
     var name = args.name || "NoNameProvided";

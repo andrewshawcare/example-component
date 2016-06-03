@@ -3,7 +3,7 @@
   "version": "0.0.9",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/jasmine"
+    "test": "JASMINE_CONFIG_PATH=jasmine.json ./node_modules/.bin/jasmine"
   },
   "description": "Renders an interactive view of a web component with a data editor and test reporter.",
   "keywords": ["example", "component", "html", "view"],
@@ -18,7 +18,8 @@
   "dependencies": {
     "ace-builds": "^1.2.2",
     "jasmine-core": "^2.4.1",
-    "requirejs": "^2.2.0"
+    "requirejs": "^2.2.0",
+    "primitive-component": "andrewshawcare/primitive-component"
   },
   "devDependencies": {
     "jasmine": "^2.4.1",
@@ -26,6 +27,6 @@
     "amdefine": "^1.0.0"
   },
   "component": {
-    "data": {}
+    "data": ""
   }
 }

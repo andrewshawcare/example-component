@@ -1,15 +1,11 @@
-define(["ace/ace"], function (ace) {
+define(["ace/ace", "./node_modules/primitive-component/index"], function (ace, PrimitiveComponent) {
   return function(args) {
     var args = args || {};
     var name = args.name || "NoNameProvided";
     var version = args.version || "no.version.provided";
     var description = args.description || "No description provided.";
-    var data = args.data || {"error": "No data provided."};
-    var component = args.component || function () {
-      var element = document.createElement("div");
-      element.innerText = "No component provided.";
-      return element;
-    };
+    var data = args.data || {"value": "No data provided."};
+    var component = args.component || PrimitiveComponent;
 
     var exampleElement = document.createElement("article");
     exampleElement.classList.add("example");
@@ -58,7 +54,7 @@ define(["ace/ace"], function (ace) {
     specElement.classList.add("spec");
     exampleElement.appendChild(specElement);
 
-    var jasmineHtmlReporterElement = document.querySelector(".jasmine_html-reporter") || document.createElement("div");
+    var jasmineHtmlReporterElement = document.createElement("div");
     jasmineHtmlReporterElement.classList.add("jasmine_html-reporter");
     specElement.appendChild(jasmineHtmlReporterElement);
 

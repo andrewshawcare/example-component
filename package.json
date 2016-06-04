@@ -1,9 +1,9 @@
 {
   "name": "example-component",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "main": "index.js",
   "scripts": {
-    "test": "JASMINE_CONFIG_PATH=jasmine.json ./node_modules/.bin/jasmine"
+    "test": "node test.js"
   },
   "description": "Renders an interactive view of a web component with a data editor and test reporter.",
   "keywords": ["example", "component", "html", "view"],
@@ -23,8 +23,7 @@
   },
   "devDependencies": {
     "jasmine": "^2.4.1",
-    "jsdom": "^8.2.0",
-    "amdefine": "^1.0.0"
+    "jsdom": "^8.2.0"
   },
   "component": {
     "data": ""

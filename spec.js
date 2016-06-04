@@ -1,7 +1,9 @@
-define(["./index.js", function (ExampleComponent) {
-  describe("Example Component", function () {
-    it("passes a test", function () {
-      expect(true).toBe(true);
+/*global define, describe, it, expect */
+define(["./index.js"], function (ExampleComponent) {
+  describe("An example component", function () {
+    it("has the example class", function () {
+      var exampleComponentElement = ExampleComponent();
+      expect(exampleComponentElement.classList.contains("example")).toBe(true);
     });
   });
-}]);
+});

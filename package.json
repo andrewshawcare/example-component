@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "jasmine": "^2.4.1",
-    "jsdom": "^8.2.0"
+    "jsdom": "^16.4.0"
   },
   "component": {
     "dependencies": ["primitive-component"],
